@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A friendly, practical lesson for older adults about using generative AI safely and confidently.">
+  <meta name="theme-color" content="#0f4c81">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f4c81'/%3E%3Cpath d='M19 38c7-15 19-15 26 0' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='26' r='6' fill='%23ffb000'/%3E%3C/svg%3E">
+  <title>AI, Clearly — A practical guide for older adults</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="lesson-theme.css">
+</head>
+<body>
+  <a class="skip-link" href="#lesson">Skip to the lesson</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="AI, Clearly home">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span><strong>AI, Clearly</strong><small>Practical AI confidence</small></span>
+    </a>
+    <div class="top-actions"><a href="index.html" class="home-link">Home</a>
+      <button class="text-size" id="textSize" type="button" aria-label="Make text larger">A<span>A</span></button>
+      <button class="quiet-button" id="notesButton" type="button">Sources &amp; design notes</button>
+    </div>
+  </header>
+  <div class="app-shell">
+    <aside class="lesson-nav" aria-label="Lesson progress">
+      <div class="compass" aria-hidden="true"><div class="compass-face"><span id="progressNumber">0%</span></div></div>
+      <p class="eyebrow">Your progress</p>
+      <nav id="stepNav"></nav>
+      <p class="nav-note">About 15 minutes<br>Your progress stays on this device.</p>
+    </aside>
+    <main id="lesson" class="lesson" tabindex="-1"><div id="lessonContent" aria-live="polite"></div></main>
+  </div>
+  <dialog id="notesDialog" class="notes-dialog">
+    <form method="dialog"><button class="dialog-close" aria-label="Close">×</button></form>
+    <p class="eyebrow">Behind the lesson</p>
+    <h2>Designed for useful confidence—not fear</h2>
+    <p>This prototype is for older adults who may be curious about AI but do not want technical jargon. It uses large type, concrete examples, immediate feedback, and repetition of safety-critical actions.</p>
+    <h3>Measurable learning outcomes</h3>
+    <p>After the lesson, a learner should be able to:</p>
+    <ol class="outcome-list">
+      <li>Describe a chatbot as a tool that generates likely responses, not a person or truth machine.</li>
+      <li>Name two useful, low-risk tasks for AI.</li>
+      <li>Use the <strong>Pause → Check → Decide</strong> routine before acting on important AI output.</li>
+      <li>Recognize an urgent family-money request as a reason to verify through a known contact.</li>
+      <li>Keep identifying, financial, and detailed health information out of casual chatbot prompts.</li>
+    </ol>
+    <h3>Evidence base</h3>
+    <ul class="source-list">
+      <li><a href="https://antifraudcentre-centreantifraude.ca/scams-fraudes/emergency-urgence-eng.htm" target="_blank" rel="noreferrer">Canadian Anti-Fraud Centre: Emergency and grandparent fraud</a></li>
+      <li><a href="https://www.priv.gc.ca/en/privacy-topics/technology/artificial-intelligence/gd_principles_ai/" target="_blank" rel="noreferrer">Privacy Commissioner of Canada: Privacy-protective generative AI principles</a></li>
+      <li><a href="https://www.who.int/publications/i/item/9789240084759" target="_blank" rel="noreferrer">World Health Organization: Guidance on generative AI for health</a></li>
+      <li><a href="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence" target="_blank" rel="noreferrer">NIST: Generative AI risk management profile</a></li>
+      <li><a href="https://doi.org/10.1145/3442188.3445922" target="_blank" rel="noreferrer">Bender et al.: “On the Dangers of Stochastic Parrots”</a></li>
+    </ul>
+    <p class="small-note">This is an educational prototype, not medical, legal, financial, or cybersecurity advice. Content last reviewed September 2026.</p>
+  </dialog>
+  <template id="safetyCardTemplate">
+    <section class="print-card">
+      <p class="eyebrow">Keep this beside your computer</p>
+      <h1>Pause → Check → Decide</h1>
+      <div><strong>Pause</strong><span>Urgency is a warning sign. Do not send money or information yet.</span></div>
+      <div><strong>Check</strong><span>Use a source or phone number you already trust—not one supplied in the message.</span></div>
+      <div><strong>Decide</strong><span>Act only after you have confirmed the important details.</span></div>
+      <p>AI can help you think. It should not make high-stakes decisions for you.</p>
+    </section>
+  </template>
+  <script src="app.js"></script>
+</body>
+</html>
